@@ -1,0 +1,40 @@
+gcc -Wall -pedantic -std=c11 -ggdb  -I../lib   -c -o counterstest.o counterstest.c
+gcc -Wall -pedantic -std=c11 -ggdb  -I../lib counterstest.o counters.o  -o counterstest
+./counterstest < testing.out
+Added new counter
+-------------------
+Added key 1
+Count should be 1
+Count for key 1: 1
+-------------------
+Added key 20
+Count should be 1
+Count for key 20: 1
+-------------------
+Added key 100
+Count should be 1
+Count for key 100: 1
+-------------------
+Changed count of key 1 to 12
+Count should be 12
+Count for key 1: 12
+-------------------
+Changed count of key 100 to 24
+Count should be 24
+Count for key 100: 24
+-------------------
+Added key 20 again
+Count should be 2
+Count for key 20: 2
+-------------------
+Number of keys should be three
+Number of keys: 3
+-------------------
+test with null count, good key...
+test with negative key...
+test with null counter, negative key...
+-------------------
+The counter:
+{100 = 24,20 = 2,1 = 12,}
+-------------------
+delete the counter...

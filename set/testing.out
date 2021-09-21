@@ -1,0 +1,30 @@
+./settest < testing.out
+Added new set
+-------------------
+Added key 'dog'
+Item should be '12'
+Item for key 'dog': 12
+-------------------
+Added key 'cat'
+Item should be '31'
+Item for key 'cat': 31
+-------------------
+Added key 'turtle'
+Item should be 2
+Item for key 'turtle': 2
+-------------------
+Tried adding key 'dog' again
+set_insert should return false
+Return value of set_insert:  0
+-------------------
+test with null set, good key...
+test with good set, null key...
+test with null set, null key...
+-------------------
+Number of keys should be three
+Number of keys: 3
+-------------------
+The set:
+{2,31,12,}
+-------------------
+delete the set...
